@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSCI 1300 - Responsive Redesign</title>
+    <style>
+        @font-face {
+            font-family: 'Nunito';
+            src: url('assets/fonts/Nunito/static/Nunito-Regular.ttf');
+            font-weight: normal;
+            font-style: normal;
+        }
+    </style>
+</head>
+
+<body>
+    <h1> CSCI 1300 - Assignment 2 - Responsive Redesign </h1>
+    <h2> <a href="https://akira-nair.github.io/imslp-responsive-redesign/" target="_blank">Check out my redesign!</a></h2>
+    <h2> Purpose </h2>
+    <p> The purpose of this assignment is to evaluate an existing interface for accessibility, visual design,
+        responsiveness, and usability and then by following the design process, develop a new responsive website
+        addressing the issues found in the original interface. </p>
+    <h2> Background </h2>
+    <p> For my assignment, I chose to redesign <a href="https://imslp.org/wiki/Main_Page" target="_blank">IMSLP</a>,
+        which stands for the International Music Score Library Project. IMSLP is a website commonly used by classical
+        musicians to search for and download sheet music and recordings of classical music available in the
+        public domain. However, the website has not been updated in several years, and because of its popularity,
+        a redesign would help improve its ease-of-use for many musicians and music scholars.</p>
+    <h3> Evaluation </h3>
+    <p> I began by searching IMSLP for various issues relating to usability and accessibility. Here was a list of issues I noticed as a user.</p>
+    <ul>
+        <li>There are two search bars in the home page, unclear the
+            difference between the two</li>
+        <li>The “Other” tap has confusing functions and information not
+            needed to be accessed by most users</li>
+        <li>There is no ability to sort or filter results except using the very small buttons</li>
+        <li>While there is an option to change language, it is hard to find on
+        the page, leading to accessibility issues (this website is used all
+        around the world, particularly in different European countries) </li>
+        <li>When searching, the results show up in a new google search
+        window, which is a completely different UI than the main page (it
+        would be better to have the results all in one interface rather than
+        combining with a 3rd party) </li>
+        <li>There is an advertisement for a new branded design called IMSLP
+        Clara but the advertisement is a screenshot with a toggle button
+        saying “switch to new skin” but the button does not actually work;
+        it just is a popup link to a new website</li>
+    </ul>
+    <p>Here is a screenshot of the IMSLP website, alongside an assessment on accessibility.</p>
+    <img src="assets/screenshots/acc-eval.png">
+    <h2> Visual Redesign </h2>
+    <h3> Sketches </h3>
+    <p> My design process began with 9 sketches of potential redesigns. I gave myself roughly 9 minutes to complete these sketches.</p>
+    <img src="assets/screenshots/sketch1.JPG">
+    <img src="assets/screenshots/sketch2.JPG">
+    <img src="assets/screenshots/sketch3.JPG">
+    <p> My final sketch I chose to work with was the following.</p>
+    <img src="assets/screenshots/lofi-final-sketch.JPG" class="rotate-horizontal">
+    <h3> Lo-Fi Mockups </h3>
+    <p> The next step involved extending my final sketch to three wireframes, corresponding to mobile, tablet, and desktop interfaces.</p>
+    <h4> Desktop </h4>
+    <img src="assets/screenshots/lofi-desktop.JPG" class="rotate-horizontal">
+    <h4> Tablet </h4>
+    <img src="assets/screenshots/lofi-tablet.JPG" class="rotate-horizontal">
+    <h4> Mobile </h4>
+    <img src="assets/screenshots/lofi-mobile.JPG" class="rotate-horizontal">
+    <h3> Style Guide </h3>
+    <p> After completing the low-fidelity mockups, I transitioned into Figma to complete a high-fidelity mockup. I created the following 
+        style guide to define various elements, such as buttons, icons, fonts, font weights, and color palette.
+    </p>
+    <img src="assets/screenshots/hifi-visualguide.png">
+    <h3> Hi-Fi Mockups </h3>
+    <h4> Desktop </h4>
+    <img src="assets/screenshots/hifi-desktop.png">
+    <h4> Tablet </h4>
+    <img src="assets/screenshots/hifi-tablet.png">
+    <h4> Mobile </h4>
+    <img src="assets/screenshots/hifi-mobile.png">
+    <h2> Responsive Redesign </h2>
+    <p> My final design tries to aggregate the primary functionality of IMSLP into one area in the screen. The original
+        IMSLP website has lots of buttons, many with very obscure features that would not be used by the normal user. 
+        In my revised interface, I present a screen where users can easily search for scores and recordings and filter
+        based on the same criteria as the original website (composition date, composer, etc.). The original IMSLP website
+        also had two navigation features (one was a dropdown, and the other a bar). To simplify this part of the interface,
+        I simply included the relevant navigation features as a navigation bar component at the top of the page. The main
+        change to the design, however, is keeping the media results on the same page as the query. The original design uses 
+        a Google Search channel to find results, which presents an inconsistent UI design and unnecessary navigation confusion. 
+        By embedding everything into one screen, I hope that my design simplifies the search process for users.
+        Here are some screenshots of my final redesign! </p>
+    <img src="assets/screenshots/final-desktop.png">
+    <img src="assets/screenshots/final-tablet.png">
+    <img src="assets/screenshots/final-phone.png">
+    <img src="assets/screenshots/final-wave-eval.png">
+    <p>As you can see, it performs fairly well in the WAVE evaluation.</p>
+    <h2> Concluding Remarks and Reflection </h2>
+    <p> I noticed that going from my high-fidelity mockup to my responsive redesign was quite a time-consuming process. If I had more time, I would
+        have liked to perfect more of the components of the interface, such as hover animations and incorporating more icons. I think that while my final design
+        resembles my initial sketch, I learned the the design process seems to involve several iterative changes across the stages. For example, I did not realize that the color palette I had chosen initially would have contrast issues in my final design, thus I had to make some of the colors darker to address accessibility issues. Finally, making the design adapt to different screen sizes is a big challenge. It is almost like building separate designs for different devices. I am curious as to approaches of making this process easier. I found the assignment very helpful in refining my HTML/CSS skills, especially in using different display formats (flex vs. grid, justify-content) to align elements the way I had in my mockups.  
+    </p>
+</body>
